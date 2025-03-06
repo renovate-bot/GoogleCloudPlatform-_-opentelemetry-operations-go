@@ -1,8 +1,8 @@
 module github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/cloudmock
 
-go 1.22
+go 1.23.0
 
-toolchain go1.23.4
+toolchain go1.24.1
 
 require (
 	cloud.google.com/go/logging v1.13.0
@@ -15,9 +15,9 @@ require (
 
 require (
 	cloud.google.com/go/longrunning v0.6.4 // indirect
-	golang.org/x/net v0.34.0 // indirect
-	golang.org/x/sys v0.29.0 // indirect
-	golang.org/x/text v0.21.0 // indirect
+	golang.org/x/net v0.37.0 // indirect
+	golang.org/x/sys v0.31.0 // indirect
+	golang.org/x/text v0.23.0 // indirect
 	google.golang.org/genproto v0.0.0-20250106144421-5f5ef82da422 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250106144421-5f5ef82da422 // indirect
 )
