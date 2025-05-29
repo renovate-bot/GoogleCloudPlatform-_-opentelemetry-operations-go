@@ -4,7 +4,7 @@ go 1.23.8
 
 require (
 	cloud.google.com/go/pubsub v1.49.0
-	github.com/GoogleCloudPlatform/functions-framework-go v1.9.1
+	github.com/GoogleCloudPlatform/functions-framework-go v1.9.2
 	github.com/GoogleCloudPlatform/opentelemetry-operations-go/e2e-test-server v0.52.0
 	github.com/cloudevents/sdk-go/v2 v2.15.2
 )
