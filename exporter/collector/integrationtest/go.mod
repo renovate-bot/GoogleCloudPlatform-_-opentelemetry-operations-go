@@ -33,8 +33,8 @@ require (
 )
 
 require (
-	cloud.google.com/go v0.120.0 // indirect
-	cloud.google.com/go/auth v0.16.1 // indirect
+	cloud.google.com/go v0.121.2 // indirect
+	cloud.google.com/go/auth v0.16.2 // indirect
 	cloud.google.com/go/auth/oauth2adapt v0.2.8 // indirect
 	cloud.google.com/go/compute/metadata v0.7.0 // indirect
 	cloud.google.com/go/longrunning v0.6.7 // indirect
@@ -123,7 +123,7 @@ require (
 	go.opentelemetry.io/collector/service v0.120.0 // indirect
 	go.opentelemetry.io/contrib/bridges/otelzap v0.9.0 // indirect
 	go.opentelemetry.io/contrib/config v0.14.0 // indirect
-	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.60.0 // indirect
+	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.61.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.61.0 // indirect
 	go.opentelemetry.io/contrib/propagators/b3 v1.34.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc v0.10.0 // indirect
