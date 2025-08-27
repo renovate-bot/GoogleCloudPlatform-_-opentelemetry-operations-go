@@ -6,7 +6,7 @@ require (
 	cloud.google.com/go/trace v1.11.6
 	github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/cloudmock v0.53.0
 	github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/resourcemapping v0.53.0
-	github.com/stretchr/testify v1.10.0
+	github.com/stretchr/testify v1.11.1
 	go.opentelemetry.io/otel v1.36.0
 	go.opentelemetry.io/otel/sdk v1.36.0
 	go.opentelemetry.io/otel/trace v1.36.0
