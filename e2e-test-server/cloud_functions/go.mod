@@ -4,13 +4,14 @@ go 1.23.0
 
 require (
 	cloud.google.com/go/pubsub v1.49.0
+	cloud.google.com/go/pubsub/v2 v2.0.0
 	github.com/GoogleCloudPlatform/functions-framework-go v1.9.1
 	github.com/GoogleCloudPlatform/opentelemetry-operations-go/e2e-test-server v0.53.0
 	github.com/cloudevents/sdk-go/v2 v2.15.2
 )
 
 require (
-	cloud.google.com/go v0.120.0 // indirect
+	cloud.google.com/go v0.121.1 // indirect
 	cloud.google.com/go/auth v0.16.1 // indirect
 	cloud.google.com/go/auth/oauth2adapt v0.2.8 // indirect
 	cloud.google.com/go/compute/metadata v0.7.0 // indirect
