@@ -158,9 +158,9 @@ lint: $(GOLANGCI_LINT) $(MISSPELL)
 	done
 	$(MISSPELL) -w $(ALL_DOCS)
 	set -e; for dir in $(ALL_GO_MOD_DIRS) $(TOOLS_MOD_DIR); do \
-	  echo "go mod tidy -compat=1.24 in $${dir}"; \
+	  echo "go mod tidy -compat=1.26 in $${dir}"; \
 	  (cd "$${dir}" && \
-	    go mod tidy -compat=1.24); \
+	    go mod tidy -compat=1.26); \
 	done
 
 generate: $(STRINGER) $(PROTOC)
@@ -200,7 +200,7 @@ govulncheck/%: | $(GOVULNCHECK)
 
 .PHONY: gotidy
 gotidy:
-	$(MAKE) for-all-mod CMD="go mod tidy -compat=1.24"
+	$(MAKE) for-all-mod CMD="go mod tidy -compat=1.26"
 
 .PHONY: update-dep
 update-dep:

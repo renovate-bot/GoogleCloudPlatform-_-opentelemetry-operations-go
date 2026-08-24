@@ -141,7 +141,7 @@ func TestExporter_Retry(t *testing.T) {
 	batch := testServer.CreateBatchWriteSpansRequests()
 	assert.Equal(t, 0, len(batch))
 	if got, want := len(handler.errs), 1; got != want {
-		t.Fatalf("len(exportErrors) = %q; want %q", got, want)
+		t.Fatalf("len(exportErrors) = %d; want %d", got, want)
 	}
 	assert.Greater(t, testServer.Retries, 0)
 }
@@ -239,7 +239,7 @@ func TestExporter_Timeout(t *testing.T) {
 	batch := testServer.CreateBatchWriteSpansRequests()
 	assert.Equal(t, 0, len(batch))
 	if got, want := len(handler.errs), 1; got != want {
-		t.Fatalf("len(exportErrors) = %q; want %q", got, want)
+		t.Fatalf("len(exportErrors) = %d; want %d", got, want)
 	}
 	got, want := handler.errs[0].Error(), "failed to export to Google Cloud Trace: context deadline exceeded"
 	if match, _ := regexp.MatchString(want, got); !match {

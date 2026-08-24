@@ -14,7 +14,7 @@
 
 steps:
   # Vendor dependencies, and zip the code.
-  - name: golang:1.25.0
+  - name: golang:1.26.0
     id: zip-code
     entrypoint: /bin/bash
     args:
@@ -33,7 +33,7 @@ steps:
     env: ["PROJECT_ID=$PROJECT_ID", "TEST_RUN_ID=$BUILD_ID"]
     args:
       - gae-standard
-      - --runtime=go125
+      - --runtime=go126
       - --appsource=/workspace/e2e-test-server/appsource.zip
       - --skip-cleanup
 logsBucket: gs://opentelemetry-ops-e2e-cloud-build-logs

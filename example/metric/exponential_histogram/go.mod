@@ -1,6 +1,6 @@
 module github.com/GoogleCloudPlatform/opentelemetry-operations-go/example/metric/exponential_histogram
 
-go 1.25.0
+go 1.26.0
 
 toolchain go1.26.3
 
