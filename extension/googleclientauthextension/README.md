@@ -1,10 +1,13 @@
-# Authenticator - Google Client Credentials
+# Authenticator - Google Client Credentials (Deprecated)
+
+> **Deprecated**: This module has moved to [opentelemetry-collector-contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/extension/googleclientauthextension).
+> Please use [`github.com/open-telemetry/opentelemetry-collector-contrib/extension/googleclientauthextension`](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/extension/googleclientauthextension) instead.
 
 | Status        |           |
 | ------------- |-----------|
-| Stability     | [alpha]  |
+| Stability     | [deprecated]  |
 
-[alpha]: https://github.com/open-telemetry/opentelemetry-collector#alpha
+[deprecated]: https://github.com/open-telemetry/opentelemetry-collector/blob/main/docs/component-stability.md#deprecated
 
 This extension provides Google OAuth2 Client Credentials and Metadata for gRPC and http based exporters.
 

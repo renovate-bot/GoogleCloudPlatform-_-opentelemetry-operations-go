@@ -14,4 +14,6 @@
 
 // Package googleclientauthextension provides gRPC and HTTP credentials and metadata
 // using Application Default Credentials: https://cloud.google.com/docs/authentication#adc
+//
+// Deprecated: Use github.com/open-telemetry/opentelemetry-collector-contrib/extension/googleclientauthextension instead.
 package googleclientauthextension // import "github.com/GoogleCloudPlatform/opentelemetry-operations-go/extension/googleclientauthextension"

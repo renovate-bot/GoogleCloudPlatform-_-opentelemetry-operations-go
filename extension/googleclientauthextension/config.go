@@ -42,6 +42,8 @@ var tokenHeaders = map[string]struct{}{
 }
 
 // Config stores the configuration for GCP Client Credentials.
+//
+// Deprecated: Use github.com/open-telemetry/opentelemetry-collector-contrib/extension/googleclientauthextension instead.
 type Config struct {
 	// Project is the project telemetry is sent to if the gcp.project.id
 	// resource attribute is not set. If unspecified, this is determined using
@@ -76,6 +78,8 @@ type Config struct {
 var _ component.Config = (*Config)(nil)
 
 // Validate checks if the extension configuration is valid.
+//
+// Deprecated: Use github.com/open-telemetry/opentelemetry-collector-contrib/extension/googleclientauthextension instead.
 func (cfg *Config) Validate() error {
 	if _, ok := tokenTypes[cfg.TokenType]; !ok {
 		return errors.New("invalid token_type")
@@ -92,6 +96,9 @@ func (cfg *Config) Validate() error {
 	return nil
 }
 
+// CreateDefaultConfig returns the default configuration for the extension.
+//
+// Deprecated: Use github.com/open-telemetry/opentelemetry-collector-contrib/extension/googleclientauthextension instead.
 func CreateDefaultConfig() component.Config {
 	return &Config{
 		Scopes: []string{

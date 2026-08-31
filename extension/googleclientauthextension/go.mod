@@ -1,3 +1,4 @@
+// Deprecated: Use github.com/open-telemetry/opentelemetry-collector-contrib/extension/googleclientauthextension instead.
 module github.com/GoogleCloudPlatform/opentelemetry-operations-go/extension/googleclientauthextension
 
 go 1.26.0

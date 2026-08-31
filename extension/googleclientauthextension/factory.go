@@ -38,6 +38,9 @@ const (
 	envProjectID = "GOOGLE_CLOUD_PROJECT"
 )
 
+// CreateExtension creates a new instance of the extension based on the given configuration.
+//
+// Deprecated: Use github.com/open-telemetry/opentelemetry-collector-contrib/extension/googleclientauthextension instead.
 func CreateExtension(ctx context.Context, set extension.Settings, cfg component.Config) (extension.Extension, error) {
 	config := cfg.(*Config)
 	ca := &clientAuthenticator{
